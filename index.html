@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="nav">
+    <div class="nav-item">
+        <a onclick="showCart()">My Cart(<span id="cart-count">0</span>)</a>
+        <div id="cart" class="cart">
+            <div class="cart-item">
+                <div class="cart-image"></div>
+                <div class="cart-title">Classic Tee</div>
+                <div class="cart-price"><span class="cart-quantity">0</span>x <b>$75.00</b></div>
+                <div class="cart-size">Size: S</div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-image"></div>
+                <div class="cart-title">Classic Tee</div>
+                <div class="cart-price"><span class="cart-quantity">0</span>x <b>$75.00</b></div>
+                <div class="cart-size">Size: M</div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-image"></div>
+                <div class="cart-title">Classic Tee</div>
+                <div class="cart-price"><span class="cart-quantity">0</span>x <b>$75.00</b></div>
+                <div class="cart-size">Size: L</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="item">
+    <div class="item-image">
+        <img src="classic-tee.jpg" alt="Classic Tee">
+    </div>
+    <div class="item-info">
+        <a class="item-title">Classic Tee</a>
+        <a class="item-price">$75.00</a>
+        <div class="item-description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc etsi multimodis reprehendi potest, tamen
+                accipio, quod dant. Ut proverbia non nulla veriora sint quam vestra dogmata. Duo Reges: constructio
+                interrete. Aliter autem vobis placet. Sed quid sentiat, non videtis. Haec et tu ita posuisti, et verba
+                vestra sunt. Pauca mutat vel plura sane; Sed tempus est, si videtur, et recta quidem ad me.</p>
+        </div>
+        <a class="item-size">SIZE<span class="required">*</span><span id="selected-size"></span></a>
+        <div class="item-size-button-group">
+            <a class="item-size-button" onclick="select(0)">S</a>
+            <a class="item-size-button" onclick="select(1)">M</a>
+            <a class="item-size-button" onclick="select(2)">L</a>
+        </div>
+        <a class="item-button" onclick="addToCart()">ADD TO CART</a>
+    </div>
+</div>
+</body>
+</html>
